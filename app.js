@@ -1,5 +1,15 @@
 function defineSuit(card) {
-    // good luck
+    let lastLetter = card[card.length - 1]
+    if (lastLetter == '♣') {
+        return 'clubs';
+    } else if (lastLetter == '♦') {
+        return 'diamonds';
+    } else if (lastLetter == '♥') {
+        return 'hearts';
+    } else if (lastLetter == '♠') {
+        return 'spades';
+    }
+    // return lastLetter;
 }
 
 console.log(defineSuit('Q♠')); // 'spades'
