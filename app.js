@@ -1,4 +1,5 @@
 function defineSuit(card) {
+    // Grab the last letter;
     let lastLetter = card[card.length - 1]
     if (lastLetter == '♣') {
         return 'clubs';
